@@ -1,4 +1,4 @@
-# write code here
+# write code here, I recommend doing in privately on own jupyter notebook or python editor before posting here to minimize editing which can lead to mistakes in final code
 def dna_count(dna):
     dna = dna.upper()
     count_A = dna.count('A')
