@@ -21,7 +21,7 @@ def dna2rna(dna):
     return rna
 
 def reverse_complement(dna):
-    dna_rev = dna.reverse()
+    dna_rev = dna[::-1]
     rev_comp = '' 
     for symbol in dna_rev:
         if symbol == 'A':
@@ -33,3 +33,4 @@ def reverse_complement(dna):
         elif symbol == 'G':
             rev_comp = rev_comp + 'C'
     return rev_comp
+# test cond: print(reverse_complement('AAAACCCGGT'))
