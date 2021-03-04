@@ -19,3 +19,17 @@ def dna2rna(dna):
         elif symbol == 'G':
             rna = rna + 'C'
     return rna
+
+def reverse_complement(dna):
+    dna_rev = dna.reverse()
+    rev_comp = '' 
+    for symbol in dna_rev:
+        if symbol == 'A':
+            rev_comp = rev_comp + 'T'
+        elif symbol == 'T':
+            rev_comp = rev_comp + 'A'
+        elif symbol == 'C':
+            rev_comp = rev_comp + 'G'
+        elif symbol == 'G':
+            rev_comp = rev_comp + 'C'
+    return rev_comp
