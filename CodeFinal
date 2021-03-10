@@ -125,15 +125,14 @@ def hamming_dist(dna1, dna2):
 	return number_of_dif
 	
 def reverse_complement(dna):
-	return dna[::-1]
-	
+    return dna[::-1]
 def locate_substring(dna_snippet, dna):
-	for i in dna
-		indexes = dna.find(dna_snippet)
-	return indexes
+    for i in dna
+       indexes = dna.find(dna_snippet)
+    return indexes
 def splice_rna(dna,intron_list):
-	rna = dna2rna(dna)
-	for i in range(0,len(intron_list)):
+    rna = dna2rna(dna)
+    for i in range(0,len(intron_list)):
 		rna = rna.replace(intron_list[i], '')
 	return rna2codon(rna)	
 def count_dom_phenotype(genotypes):
