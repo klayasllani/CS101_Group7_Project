@@ -136,3 +136,5 @@ def splice_rna(dna,intron_list):
 	for i in range(0,len(intron_list)):
 		rna = rna.replace(intron_list[i], '')
 	return rna2codon(rna)	
+def count_dom_phenotype(genotypes):
+    return 2*(genotypes[0]+genotypes[1]+genotypes[2]) + 1.5*(genotypes[3])+(genotypes[4])
