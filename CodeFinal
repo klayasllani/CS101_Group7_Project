@@ -33,3 +33,9 @@ def fibonacci_rabbits(n,k):
         f2,f1 = f1, f1 + (f2*k)
         #recursion by switching x1 and x2 results and multiplying the prior f2 by the k pairs produced
     return f2
+    
+def GC_content(dna_list):
+	dna_list = dna_list.upper()
+highest_index = dna_list.rfind("CG") 
+percentage = (dna_list.count('G') + dna_list.count('C'))/len(dna_list)
+	return (highest_index,percentage)
