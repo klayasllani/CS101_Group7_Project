@@ -26,3 +26,10 @@ def reverse_complement(dna):
             rev_comp = rev_comp + 'C'
     return rev_comp
 # test cond: print(reverse_complement('AAAACCCGGT'))
+
+def fibonacci_rabbits(n,k):
+    f1,f2 = 1,1
+    for i in range(n-1):
+        f2,f1 = f1, f1 + (f2*k)
+        #recursion by switching x1 and x2 results and multiplying the prior f2 by the k pairs produced
+    return f2
