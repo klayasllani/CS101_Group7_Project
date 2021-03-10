@@ -140,3 +140,12 @@ def splice_rna(dna,intron_list):
     
 def count_dom_phenotype(genotypes):
     return 2*(genotypes[0]+genotypes[1]+genotypes[2]) + 1.5*(genotypes[3])+(genotypes[4])
+
+def mendels_law(hom,het,rec):
+    population = hom+het+rec 
+    a = rec/population * (rec-1)/(population-1)
+    b = 0.5*(rec/population)*(het/(population-1))
+    c = 0.5*(het/population)*(rec/(population-1))
+    d = 0.25*(het/population)*((het-1)/(population-1))
+    probability = 1 - a - b - c - d
+    return probability
