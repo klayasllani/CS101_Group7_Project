@@ -114,3 +114,12 @@ if rna in genetic_code:
     amino = genetic_code[rna]
     val = val.append(amino)
 return val
+
+def hamming_dist(dna1, dna2):
+	number_of_dif = 0
+	i = 0
+	while (i < len(dna1)):
+		if  dna1[i] != dna2[i]
+			number_of_dif += 1
+		i += 1
+	return number_of_dif
