@@ -131,4 +131,8 @@ def locate_substring(dna_snippet, dna):
 	for i in dna
 		indexes = dna.find(dna_snippet)
 	return indexes
-	
+def splice_rna(dna,intron_list):
+	rna = dna2rna(dna)
+	for i in range(0,len(intron_list)):
+		rna = rna.replace(intron_list[i], '')
+	return rna2codon(rna)	
