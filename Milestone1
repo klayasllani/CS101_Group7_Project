@@ -35,10 +35,10 @@ def fibonacci_rabbits(n,k):
     return f2
     
 def GC_content(dna_list):
-	dna_list = dna_list.upper()
-highest_index = dna_list.rfind("GC") 
-percentage = (dna_list.count('G') + dna_list.count('C'))/len(dna_list)
-	return (highest_index,percentage)
+    dna_list = dna_list.upper()
+    highest_index = dna_list.rfind("GC") 
+    percentage = (dna_list.count('G') + dna_list.count('C'))/len(dna_list)
+    return (highest_index,percentage)
 	
 def rna2codon(rna):
     genetic_code = {
