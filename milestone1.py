@@ -110,9 +110,11 @@ def rna2codon(rna):
     'AGG': 'R',
     'GGG': 'G'
     }
-    allowed_codons = set('ACGU')   
+    amino = ''
     if rna in genetic_code:
-        amino = genetic_code[rna]
+        amino = genetic_code[str(rna)]
+    else:
+	amino = 'Invalid'
     return amino
 
 def hamming_dist(dna1, dna2):
