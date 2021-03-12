@@ -112,7 +112,7 @@ def rna2codon(rna):
     }
     amino = ''
     if rna in genetic_code:
-        amino = genetic_code[str(rna)]
+        amino = genetic_code[rna]
     else:
         amino = "Invalid"
     return amino
