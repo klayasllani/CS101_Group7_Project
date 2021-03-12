@@ -43,7 +43,7 @@ def GC_content(dna_list):
     percentage = (dna_list.count('G') + dna_list.count('C'))/len(dna_list)
     return (highest_index,percentage)
 	
-def rna2codon(rna):
+def rna2codon(rna1):
     genetic_code = {
     'UUU': 'F',
     'CUU': 'L',
@@ -111,8 +111,8 @@ def rna2codon(rna):
     'GGG': 'G'
     }
     amino = ''
-    if rna in genetic_code:
-        amino = genetic_code[rna]
+    if rna1 in genetic_code:
+        amino = genetic_code[rna1]
     return amino
 
 def hamming_dist(dna1, dna2):
