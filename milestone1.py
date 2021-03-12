@@ -114,7 +114,7 @@ def rna2codon(rna):
     if rna in genetic_code:
         amino = genetic_code[str(rna)]
     else:
-	amino = "Invalid"
+        amino = "Invalid"
     return amino
 
 def hamming_dist(dna1, dna2):
