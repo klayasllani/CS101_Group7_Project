@@ -39,7 +39,7 @@ def fibonacci_rabbits(n,k):
     
 def GC_content(dna_list):
     dna_list = dna_list.upper()
-    highest_index = dna_list.rfind("GC") 
+    highest_index = dna_list.find("GC") 
     percentage = (dna_list.count('G') + dna_list.count('C'))/len(dna_list)
     return (highest_index,percentage)
 	
